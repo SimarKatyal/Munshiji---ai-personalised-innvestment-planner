@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Financial Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>Munshiji</h2>
+                <p>Your Personalised Investment Planner</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li> Home </li>
+                    <li class="active">Survey Form</li>
+                    <li>Risk Profile</li>
+                    <li>Investment Strategies</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="content-header">
+                <h1>Financial Survey</h1>
+                <p>Answer these questions to get personalized insights into your financial habits.</p>
+            </header>
+
+            <section class="form-section">
+
+                <div class="progress-bar-container">
+                  <div class="progress-bar" id="progress"></div>
+                </div>
+                
+                <form id="survey-form">
+                    <!-- Question 1 -->
+                    <div class="question">
+                      <label for="investment-platform-likelihood" class="question-text">
+                        How likely are you to use an Investment Planning Platform that would suggest investment strategies and how much to invest in each based on your earnings, savings, and risk appetite? <span class="required">*</span>
+                      </label>
+                      <div class="rating-group">
+                        <div class="rating-option">
+                          <input type="radio" id="likelihood-1" name="investment-platform-likelihood" value="1" required>
+                          <label for="likelihood-1">1</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="likelihood-2" name="investment-platform-likelihood" value="2">
+                          <label for="likelihood-2">2</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="likelihood-3" name="investment-platform-likelihood" value="3">
+                          <label for="likelihood-3">3</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="likelihood-4" name="investment-platform-likelihood" value="4">
+                          <label for="likelihood-4">4</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="likelihood-5" name="investment-platform-likelihood" value="5">
+                          <label for="likelihood-5">5</label>
+                        </div>
+                      </div>
+                      <div class="scale-labels">
+                        <span>Not at All</span>
+                        <span>Definitely something to use</span>
+                      </div>
+                    </div>
+
+                    <div class="question">
+                      <label for="investment-need-agreement" class="question-text">
+                        Do you agree that investing is the need of the hour and such a one-of-a-kind platform is required today? <span class="required">*</span>
+                      </label>
+                      <div class="rating-group">
+                        <div class="rating-option">
+                          <input type="radio" id="agreement-1" name="investment-need-agreement" value="1" required>
+                          <label for="agreement-1">1</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="agreement-2" name="investment-need-agreement" value="2">
+                          <label for="agreement-2">2</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="agreement-3" name="investment-need-agreement" value="3">
+                          <label for="agreement-3">3</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="agreement-4" name="investment-need-agreement" value="4">
+                          <label for="agreement-4">4</label>
+                        </div>
+                        <div class="rating-option">
+                          <input type="radio" id="agreement-5" name="investment-need-agreement" value="5">
+                          <label for="agreement-5">5</label>
+                        </div>
+                      </div>
+                      <div class="scale-labels">
+                        <span>Not at All</span>
+                        <span>Yes, definitely!</span>
+                      </div>
+                    </div>
+                    
+                    
+
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <label for="age-bracket" class="question-text">
+                          Please select your age bracket. <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                          <div class="radio-option">
+                            <input type="radio" id="below20" name="age-bracket" value="Below 20" required>
+                            <label for="below20">Below 20</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="20-24" name="age-bracket" value="20 - 24">
+                            <label for="20-24">20 - 24</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="25-29" name="age-bracket" value="25 - 29">
+                            <label for="25-29">25 - 29</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="30-34" name="age-bracket" value="30 - 34">
+                            <label for="30-34">30 - 34</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="35-39" name="age-bracket" value="35 - 39">
+                            <label for="35-39">35 - 39</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="40-44" name="age-bracket" value="40 - 44">
+                            <label for="40-44">40 - 44</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="45-49" name="age-bracket" value="45 - 49">
+                            <label for="45-49">45 - 49</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="50-54" name="age-bracket" value="50 - 54">
+                            <label for="50-54">50 - 54</label>
+                          </div>
+                        </div>
+                      </div>
+
+                     <!-- Question 4 -->
+                     <div class="question">
+                        <label for="financial situation" class="question-text">
+                            How would you describe your current financial situation?
+                            <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                          <div class="radio-option">
+                            <input type="radio" id="Strained [I have little to invest.]" name="financial situation" value="Strained [I have little to invest.]" required>
+                            <label for="Strained [I have little to invest.]">Strained [I have little to invest.]</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="Comfortable [I can invest some savings]" name="financial situation" value="Comfortable [I can invest some savings]">
+                            <label for="Comfortable [I can invest some savings]">Comfortable [I can invest some savings]</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="Secure [I have significant savings.]" name="age-bracket" value="Secure [I have significant savings.]">
+                            <label for="Secure [I have significant savings.]">Secure [I have significant savings.]</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Question 5 -->
+                    <div class="question">
+                        <label for="emergency-funds" class="question-text">
+                          Do you have emergency funds? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                          <div class="radio-option">
+                            <input type="radio" id="none" name="emergency-funds" value="None" required>
+                            <label for="none">None</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="3-months" name="emergency-funds" value="For 3 months">
+                            <label for="3-months">For 3 months</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="6-months" name="emergency-funds" value="For 6 months">
+                            <label for="6-months">For 6 months</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="6-12-months" name="emergency-funds" value="For 6 - 12 months">
+                            <label for="6-12-months">For 6 - 12 months</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Question 6 -->
+                    <div class="question">
+                        <label for="monthly-income" class="question-text">
+                          What is your monthly income bracket? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                          <div class="radio-option">
+                            <input type="radio" id="less50k" name="monthly-income" value="Less than ₹50,000" required>
+                            <label for="less50k">Less than ₹50,000</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="50k-1l" name="monthly-income" value="₹50,000 – ₹1,00,000">
+                            <label for="50k-1l">₹50,000 – ₹1,00,000</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="1l-2.5l" name="monthly-income" value="₹1,00,000 – ₹2,50,000">
+                            <label for="1l-2.5l">₹1,00,000 – ₹2,50,000</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="2.5l-5l" name="monthly-income" value="₹2,50,000 – ₹5,00,000">
+                            <label for="2.5l-5l">₹2,50,000 – ₹5,00,000</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="more5l" name="monthly-income" value="More than ₹5,00,000">
+                            <label for="more5l">More than ₹5,00,000</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Question 7 -->
+                    <div class="question">
+                        <label for="investment-percentage" class="question-text">
+                          What percentage of monthly income are you willing to invest per month? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                          <div class="radio-option">
+                            <input type="radio" id="less10" name="investment-percentage" value="Less than 10%" required>
+                            <label for="less10">Less than 10%</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="10-24" name="investment-percentage" value="10% - 24%">
+                            <label for="10-24">10% - 24%</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="25-49" name="investment-percentage" value="25% - 49%">
+                            <label for="25-49">25% - 49%</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="50-plus" name="investment-percentage" value="50% or more">
+                            <label for="50-plus">50% or more</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Question 8 -->
+                    <div class="question">
+                        <label for="investment-goal" class="question-text">
+                          What is your primary investment goal? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group scale">
+                          <div class="radio-option">
+                            <input type="radio" id="goal1" name="investment-goal" value="1" required>
+                            <label for="goal1">1</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="goal2" name="investment-goal" value="2">
+                            <label for="goal2">2</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="goal3" name="investment-goal" value="3">
+                            <label for="goal3">3</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="goal4" name="investment-goal" value="4">
+                            <label for="goal4">4</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="goal5" name="investment-goal" value="5">
+                            <label for="goal5">5</label>
+                          </div>
+                        </div>
+                        <div class="scale-labels">
+                          <span>Capital Preservation</span>
+                          <span>Speculation [High-Risk Investments]</span>
+                        </div>
+                      </div>
+
+                    <!-- Question 9 -->
+                    <div class="question">
+                        <label for="investment-horizon" class="question-text">
+                          What is your investment time horizon? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group scale">
+                          <div class="radio-option">
+                            <input type="radio" id="horizon1" name="investment-horizon" value="1" required>
+                            <label for="horizon1">1</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="horizon2" name="investment-horizon" value="2">
+                            <label for="horizon2">2</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="horizon3" name="investment-horizon" value="3">
+                            <label for="horizon3">3</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="horizon4" name="investment-horizon" value="4">
+                            <label for="horizon4">4</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="horizon5" name="investment-horizon" value="5">
+                            <label for="horizon5">5</label>
+                          </div>
+                        </div>
+                        <div class="scale-labels">
+                          <span>Less than 1 year</span>
+                          <span>More than 5 years</span>
+                        </div>
+                      </div>
+
+                    <!-- Question 10 -->
+                    <div class="question">
+                        <label for="risk-tolerance" class="question-text">
+                          How would you describe your risk tolerance? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group scale">
+                          <div class="radio-option">
+                            <input type="radio" id="risk1" name="risk-tolerance" value="1" required>
+                            <label for="risk1">1</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="risk2" name="risk-tolerance" value="2">
+                            <label for="risk2">2</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="risk3" name="risk-tolerance" value="3">
+                            <label for="risk3">3</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="risk4" name="risk-tolerance" value="4">
+                            <label for="risk4">4</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="risk5" name="risk-tolerance" value="5">
+                            <label for="risk5">5</label>
+                          </div>
+                        </div>
+                        <div class="scale-labels">
+                          <span>Low</span>
+                          <span>High</span>
+                        </div>
+                      </div>
+
+                    <!-- Question 11 -->
+                    <div class="question">
+                        <label for="investing-experience" class="question-text">
+                          How would you rate your investing experience? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group scale">
+                          <div class="radio-option">
+                            <input type="radio" id="experience1" name="investing-experience" value="1" required>
+                            <label for="experience1">1</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="experience2" name="investing-experience" value="2">
+                            <label for="experience2">2</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="experience3" name="investing-experience" value="3">
+                            <label for="experience3">3</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="experience4" name="investing-experience" value="4">
+                            <label for="experience4">4</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="experience5" name="investing-experience" value="5">
+                            <label for="experience5">5</label>
+                          </div>
+                        </div>
+                        <div class="scale-labels">
+                          <span>None</span>
+                          <span>Advanced</span>
+                        </div>
+                      </div>
+
+                    <!-- Question 12 -->
+                    <div class="question">
+                        <label for="other-investments" class="question-text">
+                          Do you have any other investments? <span class="required">*</span>
+                        </label>
+                        <div class="radio-group">
+                          <div class="radio-option">
+                            <input type="radio" id="invest-yes" name="other-investments" value="Yes" required>
+                            <label for="invest-yes">Yes</label>
+                          </div>
+                          <div class="radio-option">
+                            <input type="radio" id="invest-no" name="other-investments" value="No">
+                            <label for="invest-no">No</label>
+                          </div>
+                        </div>
+                      </div>
+
+                    <!-- Question 13 may vary -->
+                    <div class="question">
+                      <label for="other-investments" class="question-text">
+                        If yes, what other investments do you have? <span class="required">*</span>
+                      </label>
+                      <div class="checkbox-group">
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="none" name="other-investments" value="None">
+                          <label for="none">None</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="mutual-funds" name="other-investments" value="Mutual Funds">
+                          <label for="mutual-funds">Mutual Funds</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="fds" name="other-investments" value="FDs">
+                          <label for="fds">FDs</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="ppf" name="other-investments" value="PPF">
+                          <label for="ppf">PPF</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="stocks" name="other-investments" value="Stocks">
+                          <label for="stocks">Stocks</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="real-estate" name="other-investments" value="Real Estate">
+                          <label for="real-estate">Real Estate</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="gold" name="other-investments" value="Gold">
+                          <label for="gold">Gold</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="bonds" name="other-investments" value="Bonds">
+                          <label for="bonds">Bonds</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="crypto" name="other-investments" value="Cryptocurrency">
+                          <label for="crypto">Cryptocurrency</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="checkbox" id="pension-schemes" name="other-investments" value="Pension Schemes">
+                          <label for="pension-schemes">Pension Schemes like NPS etc.</label>
+                        </div>
+                        <div class="checkbox-option">
+                          <input type="text" id="other" name="other-investments-other" placeholder="Other">
+                        </div>
+                      </div>
+                    </div>
+                    
+                
+
+                    <!-- Question 14 -->
+                    <div class="question">
+                      <label for="investment-management" class="question-text">
+                        How do you prefer to manage your investments? <span class="required">*</span>
+                      </label>
+                      <div class="radio-group">
+                        <div class="radio-option">
+                          <input type="radio" id="fully-automated" name="investment-management" value="Fully Automated" required>
+                          <label for="fully-automated">Fully Automated by the platform</label>
+                        </div>
+                        <div class="radio-option">
+                          <input type="radio" id="periodic-review" name="investment-management" value="Periodic Review">
+                          <label for="periodic-review">Periodic Review & Adjustments</label>
+                        </div>
+                        <div class="radio-option">
+                          <input type="radio" id="active-involvement" name="investment-management" value="Active Involvement">
+                          <label for="active-involvement">Your active involvement in all decisions</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Question 15 -->
+                    <div class="question">
+                      <label class="question-text">
+                        How familiar are you with the following investment types? <span class="required">*</span>
+                      </label>
+                      <table class="investment-types">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Low-Risk [Bonds, FDs, Real Estate, Gold]</td>
+                            <td><input type="radio" name="low-risk" value="1" required></td>
+                            <td><input type="radio" name="low-risk" value="2"></td>
+                            <td><input type="radio" name="low-risk" value="3"></td>
+                            <td><input type="radio" name="low-risk" value="4"></td>
+                            <td><input type="radio" name="low-risk" value="5"></td>
+                          </tr>
+                          <tr>
+                            <td>Medium-Risk [Mutual Funds, Stocks, ETFs]</td>
+                            <td><input type="radio" name="medium-risk" value="1" required></td>
+                            <td><input type="radio" name="medium-risk" value="2"></td>
+                            <td><input type="radio" name="medium-risk" value="3"></td>
+                            <td><input type="radio" name="medium-risk" value="4"></td>
+                            <td><input type="radio" name="medium-risk" value="5"></td>
+                          </tr>
+                          <tr>
+                            <td>High-Risk [Cryptocurrencies]</td>
+                            <td><input type="radio" name="high-risk" value="1" required></td>
+                            <td><input type="radio" name="high-risk" value="2"></td>
+                            <td><input type="radio" name="high-risk" value="3"></td>
+                            <td><input type="radio" name="high-risk" value="4"></td>
+                            <td><input type="radio" name="high-risk" value="5"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <!-- Question 16 -->
+                    <div class="question">
+                      <label for="financial-goals" class="question-text">
+                        Do you have any major upcoming financial goals? <span class="required">*</span> 
+                        <span class="example">[Eg: Buying a House, Retirement Plans, Children's Education etc.]</span>
+                      </label>
+                      <textarea id="financial-goals" name="financial-goals" rows="3" placeholder="Your answer" required></textarea>
+                    </div>
+
+                    <!-- Question 17 -->
+                    <div class="question">
+                      <label for="platform-recommendations" class="question-text">
+                        Any other recommendations for the platform?
+                      </label>
+                      <textarea id="platform-recommendations" name="platform-recommendations" rows="3" placeholder="Your answer"></textarea>
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">Submit Survey</button>
+                </form>
+                <div class="confirmation-message" id="confirmation-message">
+                    Your answers have been successfully recorded. Thank you for your participation!
+                </div>
+                  
+            </section>
+        </main>
+    </div>
+
+    <script src="survey.js"></script>
+</body>
+</html>
